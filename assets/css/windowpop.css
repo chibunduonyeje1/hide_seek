@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto:wght@700&display=swap');
+
+.popup-window {
+  display: none;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  overflow: scroll;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  width: 80%;
+  height: 95vh;
+  padding: 5%;
+}
+
+.popup-head-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.popup-head-container h2 {
+  font-family: sans-serif, 'Crete Round';
+  font-size: 32px;
+}
+
+.close-popup {
+  cursor: pointer;
+}
+
+.popup-message-container img {
+  width: 100%;
+  max-width: 311px;
+}
+
+.popup-window ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.popup-window ul li {
+  padding: 10px;
+  margin: 12px 12px 12px 0;
+  border: 1px solid #dfe1e6;
+}
+
+.popup-msg-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 311px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-linkbtn {
+  background-color: #f55800;
+  width: 140px;
+  height: 48px;
+  border: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.popup-linkbtn:hover {
+  border: 1px solid #f55800;
+  background-color: #fff5e1;
+  color: #f55800;
+}
+
+.popup-linkbtn img {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+@media screen and (min-width: 768px) {
+  .popup-message-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .button-container {
+    justify-content: flex-start;
+  }
+
+  .popup-linkbtn {
+    margin-right: 10px;
+  }
+
+  .popup-msg-btn {
+    width: 45%;
+    margin: 0 24px;
+    max-width: 424px;
+  }
+
+  .popup-message-container img {
+    width: 55%;
+    max-width: 659px;
+  }
+}
